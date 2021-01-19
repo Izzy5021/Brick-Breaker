@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2D Breakout Game - JavScript</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+    <link rel="stylesheet" href="game.css">
+    <title>Space Breakout</title>
+    <meta property="og:title" content="BRICK BREAKER" />
+    <meta property="og:image" content="./img/brickpreview.PNG" />
+    <meta property="og:url" content="https://besenio.github.io/SpaceBreakout/" />
+</head>
+
+<body>
+  
+    <div id="gameover"  >
+        <img src="img/won.png" alt="" id="youwon">
+        <img src="img/over8.png" alt="" id="youlose">
+        <div id="tryagain">Click Here To Play Again!</div>
+    </div>
+    <div class="game-title">BRICK BREAKER</div>
+    <canvas id="game" width="400" height="500"></canvas>
+    <br>
+   
+    <div class=information>
+        <div class="instructions">
+            <div class="instructions-front">
+                <div class="instructions-title">CONTROLS</div>
+                <div class="instructions-directions">
+                    <br>
+                    <br>
+                    <div>UP ARROW: Start Game</div>
+                    <div>SPACEBAR: Pause Game</div>
+                    <div>LEFT ARROW KEY: Move Paddle Left</div>
+                    <div>RIGHT ARROW KEY: Move Paddle Right</div>
+                    <!-- <div class="instructions-footer">(Hover For Your Highscores)</div> -->
+                </div>
+            </div>
+            <div class="instructions-back">
+                <div class="instructions-highscores">HIGHSCORES</div>
+                <div id="top-five-scores"></div>
+            </div>
+        </div>
+        <div class="personal-info">
+            <div class="personal-info-front">
+                <div class="name">ISRAEL GONZALEZ</div>
+                <div class="title">SOFTWARE ENGINEER</div>
+                <div class="title">Hover For Contact Info</div>
+                <a href="https://www.linkedin.com/in/kevin-besenio/" target="_"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/besenio" target="_"><i class="fab fa-github"></i></a>
+                <a href="https://angel.co/u/besenio" target="_"><i class="fab fa-angellist"></i></a>
+            </div>
+            <div class="personal-info-back">
+                <div class="personal-info-back-icons">
+                    <a href="https://www.linkedin.com/in/israel-gonzalez-372b2aba/" target="_"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Izzy5021" target="_"><i class="fab fa-github"></i></a>
+                    <a href="https://angel.co/u/israel-gonzalez-5" target="_"><i class="fab fa-angellist"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="components.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>

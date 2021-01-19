@@ -1,0 +1,197 @@
+body {
+   background-color: peru;
+   /* background-image: url("./images/space-background.jpg"); */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.game-title {
+   color: BLACK;
+   font-size: 70px;
+   text-align: center;
+}
+
+#ui {
+   /* background: black; */
+   display: block;
+   margin: auto;
+   margin-top: 25px;
+   box-shadow: 0px 0px 100px 10px purple;
+   /* width: 40%; */
+}
+
+#game {
+   display: block;
+   margin: auto;
+}
+
+.information {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.instructions {
+   background-color: black;
+   height: 250px;
+   width: 350px;
+   margin: 20px 15px 0px 10px;
+   color: cornsilk;
+   box-shadow: 0px 0px 100px 10px cornsilk;
+   font-size: 25px;
+   text-align: center;
+   /* position: absolute; */
+   top: 200px;
+   left: 340px;
+   transition: transform 3s;
+   transform-style: preserve-3d;
+}
+
+/* .instructions:hover, */
+.personal-info:hover {
+   transform: rotateY(.5turn);
+}
+
+.personal-info {
+   background-color: black;
+   height: 250px;
+   width: 350px;
+   margin: 20px 15px 0px 10px;
+   color: cornsilk;
+   box-shadow: 0px 0px 100px 10px cornsilk;
+   font-size: 25px;
+   text-align: center;
+   /* position: absolute; */
+   top: 200px;
+   right: 335px;
+   transition: transform 3s;
+   transform-style: preserve-3d;
+}
+
+.name {
+   margin-top: 30px;
+   transform: translateZ(10rem);
+}
+
+.title {
+   font-size: 16px;
+   transform: translateZ(10rem);
+}
+
+.instructions-front,
+.instructions-back,
+.personal-info-front,
+.personal-info-back {
+   position: absolute;
+   margin-top: 30px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   transform-style: preserve-3d;
+}
+
+.instructions-back,
+.personal-info-back {
+   transform: rotateY(.5turn);
+}
+
+.instructions-title {
+   transform: translateZ(10rem);
+}
+
+.instructions-directions {
+   font-size: 16px;
+   transform: translateZ(10rem);
+}
+
+.instructions-highscores {
+   transform: translateZ(10rem);
+}
+
+.instructions-footer {
+   margin-top: 20px;
+   font-size: 14px;
+}
+
+.fab {
+   font-size: 30px;
+   margin: 5px 2px;
+   cursor: pointer;
+   color: cornsilk;
+   transform: translateZ(10rem);
+}
+
+.personal-info-back-icons a .fab {
+   font-size: 50px;
+   margin: 40px 15px;
+   color: cornsilk;
+}
+
+.personal-info-back-icons a .fab:hover {
+   font-size: 55px;
+   color: cornsilk(204, 73, 204);
+}
+
+.top-five {
+   font-size: 23px;
+   transform: translateZ(10rem);
+}
+
+
+* {
+   font-family: "Germania One";
+   }
+
+   #gameover {
+      /* display: block; */
+      /* margin: auto; */
+      /* margin-left: 27%; */
+      position: absolute;
+      width: 400px;
+      height: 500px;
+         z-index: 15;
+      top: 25%;
+      left: 46%;
+      margin: -100px 0 0 -150px;
+      /* background: rgba(0, 0, 0, 0.5); */
+      display: none;
+   }
+
+   #youwon {
+      display: block;
+      margin: auto;
+      width: 100px;
+      position: absolute;
+      top: 200px;
+      left: 150px;
+      display: none;
+   }
+
+   #youlose {
+      display: block;
+      margin: auto;
+      width: 400px;
+      position: absolute;
+      top: 100px;
+      left: 0px;
+      display: none;
+   }
+
+   #tryagain {
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 70% ;
+      left: 25%;
+      cursor: pointer;
+      font-size: 1.25em;
+      color: #FFF;
+   }
+
+   .instructions-footer {
+   margin-top: 20px;
+   font-size: 14px;
+}
