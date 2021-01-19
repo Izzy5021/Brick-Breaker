@@ -18,7 +18,8 @@ body {
    display: block;
    margin: auto;
    margin-top: 25px;
-   box-shadow: 0px 0px 100px 10px purple;
+   box-shadow: 0px 0px 100px 10px peru;
+   /* font-family: "Germania One", fantasy; */
    /* width: 40%; */
 }
 

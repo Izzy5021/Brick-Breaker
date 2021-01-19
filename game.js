@@ -250,7 +250,7 @@ function ballBrickCollision(){
 function showGameStats(text, textX, textY, img, imgX, imgY){
     // draw text
     ctx.fillStyle = "#FFF";
-    ctx.font = "25px Germania One";
+    ctx.font = "25px fantasy";
     ctx.fillText(text, textX, textY);
     
     // draw image
